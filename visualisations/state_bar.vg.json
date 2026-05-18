@@ -7,7 +7,7 @@
   "contains": "padding"
 },
   "data": {
-    "url": "data/students_by_country.csv"
+    "url": "data/students_by_state.csv"
   },
   "mark": {
     "type": "bar",
@@ -15,26 +15,26 @@
   },
   "encoding": {
     "y": {
-      "field": "country",
+      "field": "state",
       "type": "nominal",
       "sort": "-x",
-      "title": "Source country"
+      "title": "State or territory"
     },
     "x": {
       "field": "students",
       "type": "quantitative",
-      "title": "Number of students"
+      "title": "YTD enrolments"
     },
     "tooltip": [
       {
-        "field": "country",
+        "field": "state",
         "type": "nominal",
-        "title": "Country"
+        "title": "State/Territory"
       },
       {
         "field": "students",
         "type": "quantitative",
-        "title": "Students",
+        "title": "YTD enrolments",
         "format": ","
       }
     ]

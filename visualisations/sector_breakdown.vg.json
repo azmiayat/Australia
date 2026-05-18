@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 360,
+  "height": 320,
+  "data": {
+    "url": "data/students_by_sector.csv"
+  },
+    "mark": {
+    "type": "arc",
+    "innerRadius": 60,
+    "outerRadius": 120
+    },
+  "encoding": {
+    "theta": {
+      "field": "students",
+      "type": "quantitative",
+      "title": "YTD enrolments"
+    },
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "title": "Sector"
+    },
+    "tooltip": [
+      {
+        "field": "sector",
+        "type": "nominal",
+        "title": "Sector"
+      },
+      {
+        "field": "students",
+        "type": "quantitative",
+        "title": "YTD enrolments",
+        "format": ","
+      }
+    ]
+  }
+}
