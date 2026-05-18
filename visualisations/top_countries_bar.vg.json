@@ -3,7 +3,13 @@
   "width": 480,
   "height": 320,
   "data": {
-    "url": "data/students_by_country.csv"
+    "url": "data/students_by_country.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "students": "number"
+      }
+    }
   },
   "mark": {
     "type": "bar",
